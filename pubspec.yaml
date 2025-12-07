@@ -3,7 +3,7 @@ description: An annotation package for value object source code generation.
 version: 0.0.1
 
 environment:
-  sdk: ">=3.3.0"
+  sdk: ">=3.0.0"
 
 dependencies:
 
