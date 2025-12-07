@@ -1,10 +1,9 @@
 name: simple_value_object_annotation
 description: An annotation package for value object source code generation.
 version: 0.0.1
-# repository: https://github.com/my_org/my_repo
 
 environment:
-  sdk: ">=3.0.0"
+  sdk: ">=3.3.0"
 
 dependencies:
 
