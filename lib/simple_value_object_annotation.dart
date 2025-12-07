@@ -2,10 +2,11 @@
 ///
 /// [T]: The data type of the value object (e.g., String, int).
 ///
-/// Example usage:
-/// ```dart
-/// import 'package:simple_value_object_annotation/value_object_annotation.dart';
+/// ## Example
 ///
+/// ```dart
+/// // A value object for a username with length constraints.
+/// // usename must be between 5 and 80 characters.
 /// @ValueObject<String>(minLength: 5, maxLength: 80)
 /// typedef Username = _$Username;
 /// ```
@@ -34,6 +35,7 @@ class ValueObject<T> {
   final bool? allowEmpty;
 
   /// A map of predefined constant values for the value object.
+  /// Code generator may generate as field constants.
   final Map<String, T>? presets;
 
   /// Ctor for ValueObject annotation.
