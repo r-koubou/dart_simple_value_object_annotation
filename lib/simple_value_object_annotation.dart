@@ -34,10 +34,6 @@ class ValueObject<T> {
   /// if null, validation for emptiness is not applied.
   final bool? allowEmpty;
 
-  /// A map of predefined constant values for the value object.
-  /// Code generator may generate as field constants.
-  final Map<String, T>? presets;
-
   /// Ctor for ValueObject annotation.
   const ValueObject({
     this.min,
@@ -45,6 +41,5 @@ class ValueObject<T> {
     this.minLength,
     this.maxLength,
     this.allowEmpty,
-    this.presets,
   });
 }
